@@ -1,0 +1,7 @@
+FROM mcr.microsoft.com/windows/servercore:1903
+
+WORKDIR /azp
+
+COPY setup.ps1 .
+
+CMD powershell .\setup.ps1
